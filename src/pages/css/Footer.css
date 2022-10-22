@@ -1,0 +1,112 @@
+.footer {
+    width: 100%;
+}
+
+.footer .container {
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.footer__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.footer__img > img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer__img-desc {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.footer__img-desc > h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.footer__img-desc > button {
+    width: 220px;
+    height: 80px;
+    filter: drop-shadow(4px 8px 25px rgba(62, 134, 245, 0.25));
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #3E86F5;
+    border-radius: 1rem;
+}
+
+.footer__details {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copyrights {
+    width: 50%;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 42px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer__nav {
+    width: 50%;
+}
+
+.footer__nav > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+@media screen and (max-width: 80rem) {
+    .footer__img-desc {
+        gap: 1rem;
+    }
+    .footer__img-desc > h1 {
+        font-size: 18px;
+        line-height: 32px;
+        height: 100%;
+        width: 100%;
+    }
+    .footer__img-desc > button {
+        font-size: 18px;
+        width: 200px;
+        height: 70px;
+    }
+    .footer__details {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .footer__details > * {
+        width: 100%;
+    }
+    .footer__copyrights {
+        text-align: center;
+        border-top: 1px solid var(--black-clr);
+        padding-top: 1rem;
+    }
+}

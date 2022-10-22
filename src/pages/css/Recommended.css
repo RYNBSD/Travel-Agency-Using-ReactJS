@@ -1,0 +1,73 @@
+.recommended {
+    width: 100%;
+}
+
+.recommended .section-title {
+    background-color: transparent;
+}
+
+.recommended .section-title > button {
+    background-color: transparent;
+    transition: background-color .5s ease;
+}
+
+.recommended .section-title > button:hover {
+    background-color: var(--white-clr);
+    color: var(--blue-clr);
+}
+
+.recommended .section-title > button:focus {
+    background-color: var(--white-clr);
+    color: var(--blue-clr);
+}
+
+.recommendedCard {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-clr);
+    border-radius: 2rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.recommendedCard__img {
+    position: relative;
+}
+
+.recommendedCard__img-star {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: var(--white-clr);
+    border-radius: 1rem;
+    padding: 0 .5rem;
+    display: flex;
+    gap: .5rem;
+}
+
+.recommendedCard__desc {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.recommendedCard__desc > h1 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.recommendedCard__desc-place {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+@media screen and (max-width: 80rem) {
+    .recommended .container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

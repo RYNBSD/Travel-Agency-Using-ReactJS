@@ -1,0 +1,68 @@
+.d-grid {
+    display: grid;
+    margin: 0 auto;
+}
+
+.f-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.section-title {
+    width: 340px;
+    height: 66px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5rem 0;
+    background-color: var(--white-clr);
+}
+
+.section-title > button {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    width: 100px;
+    height: 46px;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: var(--white-clr);
+    transition: all .5s ease;
+}
+
+.section-title > button:hover {
+    background-color: var(--blue-clr);
+    color: var(--white-clr);
+    border-radius: 1rem;
+}
+
+.section-title > button:focus {
+    background-color: var(--blue-clr);
+    color: var(--white-clr);
+    border-radius: 1rem;
+}
+
+.title {
+    width: 100%;
+}
+
+.title > h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    color: #000000;
+}
+
+@media screen and (max-width: 80rem) {
+    .title {
+        margin-top: 3rem;
+    }
+}
